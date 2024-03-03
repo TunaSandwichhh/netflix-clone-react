@@ -1,6 +1,5 @@
 import { useState } from "react";
 import useGetTmdbMovies from "../hooks/useGetTmdbMovies";
-import Navbar from '../components/Navbar.jsx'
 import { Link } from "react-router-dom"
 
 const Movies = () => {
@@ -11,7 +10,6 @@ const Movies = () => {
 
   return (
     <>
-      <Navbar></Navbar>
       {
         movies.map(movie => (
           <Link to={`/movie/${movie.id}`} key={movie.id}>
