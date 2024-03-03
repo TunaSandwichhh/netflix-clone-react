@@ -11,7 +11,7 @@ const Signup = () => {
     signUp(email, password,
       (result) => {
         console.log('Signup successo:', result);
-        navigate('/movies');
+        navigate('/verify', { state: { email } });
       },
       (error) => {
         console.error('Signup fallito:', error);

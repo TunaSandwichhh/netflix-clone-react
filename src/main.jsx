@@ -8,6 +8,7 @@ import Movie from './pages/Movie.jsx'
 import { isAuthenticated } from './services/Auth/isAuthenticated.js'
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
+import Verify from './pages/Verify.jsx'
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: '/signup',
     element: <Signup></Signup>
+  },
+  {
+    path: '/verify',
+    element: <Verify></Verify>
   },
   // {
   //   path: '/not-found',
