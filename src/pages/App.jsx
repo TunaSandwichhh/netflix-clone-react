@@ -1,12 +1,17 @@
 import './App.css'
-import Navbar from '../components/Navbar.jsx'
+import { Link } from 'react-router-dom'
 
 function App() {
 
 
   return (
     <>
-      <Navbar></Navbar>
+      <div>
+        <Link to={'/login'}>Login</Link>
+      </div>
+      <div>
+        <Link to={'/signup'}>Sign Up</Link>
+      </div>
     </>
   )
 }
